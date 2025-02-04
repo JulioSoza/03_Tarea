@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Capacidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de Capacidad</h1>
+        <input type="number" id="inputAmount" placeholder="Ingrese la cantidad">
+        <select id="inputUnit">
+            <option value="GAL">Galones (GAL)</option>
+            <option value="L">Litros (L)</option>
+            <option value="BOT">Botellas (BOT)</option>
+        </select>
+        <button onclick="convertCapacity()">Convertir</button>
+
+        <div class="results">
+            <div class="unit">
+                <h2>Galones (GAL)</h2>
+                <p id="galResult">0.00 GAL</p>
+            </div>
+            <div class="unit">
+                <h2>Litros (L)</h2>
+                <p id="lResult">0.00 L</p>
+            </div>
+            <div class="unit">
+                <h2>Botellas (BOT)</h2>
+                <p id="botResult">0.00 BOT</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
